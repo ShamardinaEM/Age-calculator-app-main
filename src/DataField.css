@@ -1,0 +1,49 @@
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input {
+    font-weight: 600;
+    padding: 0.1em 0.5em;
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 5px;
+    width: min(7ch, 22vw);
+    cursor: pointer;
+}
+input:focus {
+    outline: 1px solid hsl(259, 100%, 65%);
+}
+input:hover {
+    outline: 1px solid hsl(259, 100%, 60%);
+}
+label {
+    gap: 0.5em;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: hsl(0, 1%, 44%);
+}
+label {
+    display: flex;
+    flex-direction: column;
+}
+.error-text {
+    font-size: 12px;
+    text-transform: none;
+    color: hsl(0, 100%, 67%);
+    font-style: italic;
+    font-weight: 400;
+}
+.error-input {
+    outline: 1px solid hsl(0, 100%, 67%);
+}
+.error-label {
+    color: hsl(0, 100%, 67%);
+}

@@ -1,0 +1,76 @@
+.attribution {
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+.inputs {
+    display: flex;
+    gap: 1em;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.wrapper {
+    border-radius: 10px;
+    padding: 1em 2em;
+    margin: auto;
+    background: white;
+    width: min(100% - 1em, 37ch);
+}
+.line {
+    height: 0.5px;
+    background-color: hsl(0, 0%, 86%);
+    width: calc(37ch - 6em);
+}
+.sect {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.submit-btn {
+    background: hsl(259, 100%, 65%);
+    border: transparent;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    display: flex;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.submit-btn img {
+    margin: auto;
+}
+.submit-btn:hover {
+    background: black;
+}
+
+.main-block div,
+.main-block div span {
+    font-style: italic;
+    font-size: 90px;
+    font-weight: 800;
+}
+.main-block span {
+    color: hsl(259, 100%, 65%);
+}
+@media (max-width: 700px) {
+    .wrapper {
+        padding: 1em 0.5em;
+    }
+    .main-block div,
+    .main-block div span {
+        font-size: 55px;
+    }
+    .line {
+        position: absolute;
+        width: calc(100% - 2em)
+    }
+    .submit-btn {
+        z-index: 1;
+        position: relative;
+        left: 40%;
+    }
+}
